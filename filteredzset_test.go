@@ -10,7 +10,7 @@ import (
 )
 
 func TestMe(t *testing.T) {
-	ss := New()
+	ss := New[*SaveRecord]()
 	srs := []*SaveRecord{}
 	rnd := rand.New(rand.NewSource(42))
 	rg := NewRandG()
